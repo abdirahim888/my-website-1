@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoVibe - Images</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About Us</a>
+    
+    <!-- Gallery with arrow included inside the button -->
+    <div class="dropdown">
+      <button class="dropbtn">
+        Gallery <span style="font-size: 14px;">&#x25BC;</span>
+      </button>
+      <div class="dropdown-content">
+        <a href="history.html">History</a>
+        <a href="images.html">Images</a>
+      </div>
+    </div>
+    
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+
+  <div class="container">
+    <h1>Eco Moments</h1>
+    <p>Take a look at some beautiful moments and nature captures that inspire the EcoVibe mission.</p>
+    
+    <div class="gallery-grid">
+      <img src="laf.webp" alt="Nature 1" />
+      <img src="lol.png" alt="Nature 2" />
+      <img src="gad.webp" alt="Nature 3" />
+      <img src="dune.jpg" alt="Nature 4" />
+      <img src="hat.jpg" alt="Nature 5" />
+      <img src="yal.jpg" alt="Nature 6" />
+    </div>
+  </div>
+</body>
+</html>
